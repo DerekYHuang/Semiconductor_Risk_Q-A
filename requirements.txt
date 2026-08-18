@@ -1,0 +1,34 @@
+# Core
+pyyaml
+tqdm
+
+# Document parsing
+pypdf
+beautifulsoup4
+lxml
+requests
+
+# Chunking / text processing
+tiktoken
+
+# Embeddings + vector store
+sentence-transformers
+chromadb
+
+# Local LLM client (talks to Ollama's local server, no cloud calls)
+ollama
+
+# Eval / metrics
+scikit-learn
+pandas
+numpy
+
+# Fine-tuning (stretch goal — only needed if you get to src/finetune)
+transformers
+peft
+accelerate
+datasets
+torch
+
+# Demo UI
+streamlit

@@ -1,0 +1,5 @@
+{"id": "q001", "question": "[TODO: write a factual question answerable from one specific source document]", "answer": "[TODO: the correct answer, written by you after reading the source]", "source_doc": "[TODO: filename of the document this answer comes from]", "category": "site_status"}
+{"id": "q002", "question": "[TODO]", "answer": "[TODO]", "source_doc": "[TODO]", "category": "contaminant_type"}
+{"id": "q003", "question": "[TODO]", "answer": "[TODO]", "source_doc": "[TODO]", "category": "vapor_mitigation"}
+{"id": "q004", "question": "[TODO]", "answer": "[TODO]", "source_doc": "[TODO]", "category": "timeline"}
+{"id": "q005", "question": "[TODO]", "answer": "[TODO]", "source_doc": "[TODO]", "category": "regulatory_agency"}
