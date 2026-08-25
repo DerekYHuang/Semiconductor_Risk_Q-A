@@ -1,5 +1,29 @@
-{"id": "q001", "question": "[TODO: write a factual question answerable from one specific source document]", "answer": "[TODO: the correct answer, written by you after reading the source]", "source_doc": "[TODO: filename of the document this answer comes from]", "category": "site_status"}
-{"id": "q002", "question": "[TODO]", "answer": "[TODO]", "source_doc": "[TODO]", "category": "contaminant_type"}
-{"id": "q003", "question": "[TODO]", "answer": "[TODO]", "source_doc": "[TODO]", "category": "vapor_mitigation"}
-{"id": "q004", "question": "[TODO]", "answer": "[TODO]", "source_doc": "[TODO]", "category": "timeline"}
-{"id": "q005", "question": "[TODO]", "answer": "[TODO]", "source_doc": "[TODO]", "category": "regulatory_agency"}
+{"id": "q001", "question": "What contaminants were found in monitoring wells at the National Semiconductor Corp. site in Santa Clara?", "answer": "Vinyl chloride, trichloroethylene, and 1,1-dichloroethylene, believed to have resulted from leaking underground storage tanks.", "source_doc": "national_env.txt", "category": "contaminant_type"}
+{"id": "q002", "question": "Roughly how many people depend on wells within 3 miles of the National Semiconductor Corp. site as a drinking water source?", "answer": "About 300,000 people.", "source_doc": "national_env.txt", "category": "site_status"}
+{"id": "q003", "question": "When was the Intel Corp. (Santa Clara III) site removed from the National Priorities List?", "answer": "September 24, 2019.", "source_doc": "intel_superfund.txt", "category": "timeline"}
+{"id": "q004", "question": "What activity did Intel Corp. perform at the Santa Clara III site before it was cleaned up?", "answer": "Quality control testing of chemicals and testing of microprocessors, from 1976 until 2008.", "source_doc": "intel_superfund.txt", "category": "site_status"}
+{"id": "q005", "question": "What size is the Applied Materials Superfund site in Santa Clara, and when did the company begin making semiconductor wafers there?", "answer": "About 9 acres; Applied Materials began making semiconductor wafers in the building in 1974.", "source_doc": "applied_materials_superfund.txt", "category": "site_status"}
+{"id": "q006", "question": "What two companies, besides Advanced Micro Devices, make up the Triple Site Superfund site?", "answer": "TRW Microwave, Inc. and Signetics Inc.", "source_doc": "amd_superfund.txt", "category": "regulatory_agency"}
+{"id": "q007", "question": "What health outcome did a California Department of Health Services study link to the contaminated well near the Fairchild Semiconductor site in the Los Paseos neighborhood?", "answer": "2.5 to 3 times the expected rate of miscarriages and birth defects among pregnant women exposed to the contaminated drinking water.", "source_doc": "fairchild_superfund.txt", "category": "site_status"}
+
+{"id": "q008", "question": "[TODO: write a question from cts_superfund.txt]", "answer": "[TODO: fill in after reading the file]", "source_doc": "cts_superfund.txt", "category": "site_status"}
+{"id": "q009", "question": "[TODO: write a question from jasco_chemical_superfund.txt]", "answer": "[TODO]", "source_doc": "jasco_chemical_superfund.txt", "category": "contaminant_type"}
+{"id": "q010", "question": "[TODO: write a question from spectra_superfund.txt]", "answer": "[TODO]", "source_doc": "spectra_superfund.txt", "category": "site_status"}
+{"id": "q011", "question": "[TODO: write a question from synertek_superfund.txt]", "answer": "[TODO]", "source_doc": "synertek_superfund.txt", "category": "site_status"}
+{"id": "q012", "question": "[TODO: write a question from teledyne_superfund.txt]", "answer": "[TODO]", "source_doc": "teledyne_superfund.txt", "category": "timeline"}
+{"id": "q013", "question": "[TODO: write a question from trw_microwave_superfund.txt]", "answer": "[TODO]", "source_doc": "trw_microwave_superfund.txt", "category": "site_status"}
+
+{"id": "q014", "question": "[TODO: write a question from advanced_mirco_env.txt]", "answer": "[TODO]", "source_doc": "advanced_mirco_env.txt", "category": "site_status"}
+{"id": "q015", "question": "[TODO: write a question from fairchild_env.txt]", "answer": "[TODO]", "source_doc": "fairchild_env.txt", "category": "site_status"}
+{"id": "q016", "question": "[TODO: write a question from intel_env.txt]", "answer": "[TODO]", "source_doc": "intel_env.txt", "category": "site_status"}
+{"id": "q017", "question": "[TODO: write a question from national_env.txt (a different fact than q001/q002)]", "answer": "[TODO]", "source_doc": "national_env.txt", "category": "regulatory_agency"}
+{"id": "q018", "question": "[TODO: write a question from philips_env.txt]", "answer": "[TODO]", "source_doc": "philips_env.txt", "category": "contaminant_type"}
+{"id": "q019", "question": "[TODO: write a question from siemens_env.txt]", "answer": "[TODO]", "source_doc": "siemens_env.txt", "category": "site_status"}
+
+{"id": "q020", "question": "[TODO: write a question from amd_gt.txt (GeoTracker monitoring data)]", "answer": "[TODO]", "source_doc": "amd_gt.txt", "category": "contaminant_type"}
+{"id": "q021", "question": "[TODO: write a question from microstorage_td.txt]", "answer": "[TODO]", "source_doc": "microstorage_td.txt", "category": "timeline"}
+{"id": "q022", "question": "[TODO: write a question from philips_td.txt]", "answer": "[TODO]", "source_doc": "philips_td.txt", "category": "contaminant_type"}
+
+{"id": "q023", "question": "[TODO: write a question about vapor intrusion mitigation from vapor_intrusion_page.txt]", "answer": "[TODO]", "source_doc": "vapor_intrusion_page.txt", "category": "vapor_mitigation"}
+{"id": "q024", "question": "[TODO: write a question from Final_VIG_Oct_2011_ada.txt]", "answer": "[TODO]", "source_doc": "Final_VIG_Oct_2011_ada.txt", "category": "vapor_mitigation"}
+{"id": "q025", "question": "[TODO: write a question about screening/evaluating vapor intrusion from VI_SupGuid_Screening-Evaluating.txt]", "answer": "[TODO]", "source_doc": "VI_SupGuid_Screening-Evaluating.txt", "category": "vapor_mitigation"}

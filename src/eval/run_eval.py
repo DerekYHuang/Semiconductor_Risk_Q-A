@@ -24,7 +24,14 @@ from metrics import score_result  # noqa: E402
 
 
 def load_eval_set(path: Path) -> list[dict]:
-    rows = [json.loads(line) for line in open(path, encoding="utf-8")]
+    rows = []
+    for line in open(path, encoding="utf-8"):
+        line = line.strip()
+        # skip blank lines and comment lines (JSONL has no native comment syntax,
+        # but it's easy to accidentally leave these in when hand-editing the file)
+        if not line or line.startswith("//") or line.startswith("#"):
+            continue
+        rows.append(json.loads(line))
     # Filter out un-filled template rows so a fresh clone doesn't error out —
     # but warn loudly, since an eval run on 0 real rows is not a real eval run.
     real_rows = [r for r in rows if "[TODO" not in r["question"]]
