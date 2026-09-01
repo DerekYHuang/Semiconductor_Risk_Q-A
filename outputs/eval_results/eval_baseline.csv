@@ -1,0 +1,20 @@
+id,category,retrieval_hit,keyword_overlap,judged_correct,question,generated_answer,reference_answer
+q001,contaminant_type,True,0.0,False,What contaminants were found in monitoring wells at the National Semiconductor Corp. site in Santa Clara?,I couldn't find the specific information about contaminants found in monitoring wells at the National Semiconductor Corp. site in Santa Clara in the provided source excerpts.,"Vinyl chloride, trichloroethylene, and 1,1-dichloroethylene, believed to have resulted from leaking underground storage tanks."
+q002,site_status,False,0.333,False,Roughly how many people depend on wells within 3 miles of the National Semiconductor Corp. site as a drinking water source?,"I couldn't find any information in the provided source excerpts about the National Semiconductor Corp. site. The provided excerpts only mention the following sites:
+
+* Teledyne Semiconductor
+* Intel Corp. (Santa Clara 3)
+* SynerTek, Inc. (Building 1)
+* Fairchild Semiconductor Corp. (South San Jose Plant)
+
+These sites are mentioned in the context of Superfund sites, but I couldn't find any information about the National Semiconductor Corp. site.","About 300,000 people."
+q003,timeline,True,1.0,True,When was the Intel Corp. (Santa Clara III) site removed from the National Priorities List?,"The Intel Corp. (Santa Clara III) site was removed from the National Priorities List (NPL) on September 24, 2019, as EPA determined that all of the cleanup work required by Intel Corp. had been completed. (Source: superfund__intel_superfund.txt)","September 24, 2019."
+q004,site_status,True,0.444,True,What activity did Intel Corp. perform at the Santa Clara III site before it was cleaned up?,"According to the source excerpt [Source: superfund__intel_superfund.txt], Intel Corp. performed quality control of chemicals and tested microprocessors at the 4-acre site.","Quality control testing of chemicals and testing of microprocessors, from 1976 until 2008."
+q005,site_status,True,0.6,True,"What size is the Applied Materials Superfund site in Santa Clara, and when did the company begin making semiconductor wafers there?","I couldn't find the information on the size of the Applied Materials Superfund site in Santa Clara, and I also couldn't find the information on when the company began making semiconductor wafers there.",About 9 acres; Applied Materials began making semiconductor wafers in the building in 1974.
+q006,regulatory_agency,True,1.0,True,"What two companies, besides Advanced Micro Devices, make up the Triple Site Superfund site?","According to the source excerpts, the two companies, besides Advanced Micro Devices, that make up the Triple Site Superfund site are:
+
+1. TRW Microwave, Inc.
+2. Signetics Inc.
+
+Source: superfund__amd_superfund.txt and superfund__trw_microwave_superfund.txt","TRW Microwave, Inc. and Signetics Inc."
+q007,site_status,True,0.077,False,What health outcome did a California Department of Health Services study link to the contaminated well near the Fairchild Semiconductor site in the Los Paseos neighborhood?,I could not find any information in the provided source excerpts about a California Department of Health Services study linking a health outcome to the contaminated well near the Fairchild Semiconductor site in the Los Paseos neighborhood.,2.5 to 3 times the expected rate of miscarriages and birth defects among pregnant women exposed to the contaminated drinking water.
