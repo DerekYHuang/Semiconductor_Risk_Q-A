@@ -1,0 +1,49 @@
+id,category,retrieval_hit,keyword_overlap,is_refusal,judged_correct,question,generated_answer,reference_answer
+q001,contaminant_type,True,0.0,True,False,What contaminants were found in monitoring wells at the National Semiconductor Corp. site in Santa Clara?,I couldn't find the specific information on contaminants found in monitoring wells at the National Semiconductor Corp. site in Santa Clara in the provided source excerpts.,"Vinyl chloride, trichloroethylene, and 1,1-dichloroethylene, believed to have resulted from leaking underground storage tanks."
+q002,site_status,False,0.333,True,False,Roughly how many people depend on wells within 3 miles of the National Semiconductor Corp. site as a drinking water source?,"I couldn't find any information in the provided source excerpts about the National Semiconductor Corp. site. The provided excerpts only mention the following sites:
+
+* Teledyne Semiconductor
+* Intel Corp. (Santa Clara 3)
+* SynerTek, Inc. (Building 1)
+* Fairchild Semiconductor Corp. (South San Jose Plant)
+
+These sites are mentioned in the context of Superfund sites, but I couldn't find any information about the National Semiconductor Corp. site.","About 300,000 people."
+q003,timeline,True,1.0,False,True,When was the Intel Corp. (Santa Clara III) site removed from the National Priorities List?,"According to the source excerpt [Source: superfund__intel_superfund.txt], the Intel Corp. (Santa Clara III) site was removed from the National Priorities List (NPL) on September 24, 2019.","September 24, 2019."
+q004,site_status,True,0.444,False,True,What activity did Intel Corp. perform at the Santa Clara III site before it was cleaned up?,"According to the provided source excerpts, Intel Corp. performed quality control of chemicals and tested microprocessors at the Santa Clara III site.","Quality control testing of chemicals and testing of microprocessors, from 1976 until 2008."
+q005,site_status,True,0.6,True,False,"What size is the Applied Materials Superfund site in Santa Clara, and when did the company begin making semiconductor wafers there?","I couldn't find the information on the size of the Applied Materials Superfund site in Santa Clara, and I couldn't find the information on when the company began making semiconductor wafers there in the provided source excerpts.",About 9 acres; Applied Materials began making semiconductor wafers in the building in 1974.
+q006,regulatory_agency,True,1.0,False,True,"What two companies, besides Advanced Micro Devices, make up the Triple Site Superfund site?","According to the provided source excerpts, the two companies, besides Advanced Micro Devices, that make up the Triple Site Superfund site are:
+
+1. TRW Microwave, Inc.
+2. Signetics Inc.
+
+Source: superfund__amd_superfund.txt and superfund__trw_microwave_superfund.txt","TRW Microwave, Inc. and Signetics Inc."
+q007,site_status,True,0.077,True,False,What health outcome did a California Department of Health Services study link to the contaminated well near the Fairchild Semiconductor site in the Los Paseos neighborhood?,I could not find any information in the provided source excerpts about a California Department of Health Services study linking a health outcome to the contaminated well near the Fairchild Semiconductor site in the Los Paseos neighborhood.,2.5 to 3 times the expected rate of miscarriages and birth defects among pregnant women exposed to the contaminated drinking water.
+q008,site_status,True,0.1,False,False,"How many acres is the Intel Corp. (Santa Clara III) site? VERIFY: EPA sources conflict, some say 4-acre, an EPA news release says 1-acre -- check which figure your saved file actually uses.","I could not verify the acreage of the Intel Corp. (Santa Clara III) site from the provided source excerpts. The EPA Superfund Site Profile mentions that the site is a 4-acre area, but the geotracker file does not mention the acreage.",4 acres (per EPA's Superfund Sites in Reuse page) -- but a 2019 EPA news release describing the same site says 1-acre. Confirm against your saved document.
+q009,site_status,True,0.409,False,True,"What did CTS Printex, Inc. manufacture at its Mountain View facility, and during what years did it operate there?","According to the provided source excerpts, CTS Printex, Inc. manufactured printed circuit board manufacturing facilities within a 5.5-acre portion of the area bounded by certain streets in Mountain View, California. However, the source excerpt does not specify what was manufactured at the facility, only that it was a printed circuit board manufacturing facility.
+
+The excerpt does mention that CTS Printex operated the facility from 1961 to 1995, but it does not provide information on the specific products manufactured during that time.
+
+Source: superfund__cts_superfund.txt","CTS Printex operated a printed circuit board manufacturing facility from 1970 to early 1985, using metals and degreasing compounds (organic solvents) that were discharged to soil and groundwater."
+q010,contaminant_type,True,0.667,False,True,"How many acres did JASCO Chemical Corporation occupy in Mountain View, and what years did it operate there?","According to the source excerpt [Source: superfund__jasco_superfund.txt], JASCO Chemical Corporation occupied 2 acres of land in Mountain View, California. The company operated on this site from 1976 until 1995.","Two acres, from 1976 until 1995, repackaging and formulating chemical products."
+q011,site_status,True,1.0,False,True,"How large is the Spectra-Physics, Inc. site in Mountain View, and since what year has it been used for electronics/laser manufacturing?","The Spectra-Physics, Inc. site in Mountain View is 11.5 acres in size. It has been used for electronics and gas laser manufacturing since 1961.",11.5 acres; the site has been used for electronics and gas laser manufacturing since 1961.
+q012,site_status,True,0.35,False,False,"What size was the Synertek (Building 1) site, and how many buildings were on it? VERIFY: sources conflict -- one EPA document says 1.5 acres (Building 1 only), another says the full 3.5-acre site had five buildings -- check which your saved file describes.","According to the provided source excerpts, the Synertek (Building 1) site was 1-acre in size, not 3.5 acres as mentioned in another source. The saved file (superfund__synertek_superfund.txt) specifically states:
+
+""Site Location
+
+Street Address:
+
+ 1300 TERRA BELLA AVE
+ 
+MOUNTAIN VIEW, CA 94043
+ 
+ 
+
+Background
+
+Teledyne Semiconductor has operated as a semiconductor manufacturer at this 1-acre site since 1962.""
+
+There is no mention of a 3.5-acre site or five buildings in the saved file.",One EPA source describes a 1.5-acre Building 1 site; the official NPL Site Narrative describes the full site as 3.5 acres across five buildings at 3050 Coronado Boulevard. Confirm against your saved document.
+q013,timeline,True,0.625,True,False,"In what year was the Teledyne Semiconductor property declared a Superfund site, and in what year did Spectra-Physics follow?","I couldn't find the specific year when the Teledyne Semiconductor property was declared a Superfund site. However, I can tell you that the site was added to the National Priorities List (NPL) in 1989.
+
+As for Spectra-Physics, Inc., the site was also added to the NPL in 1989, but the text does not specify the year when the site was declared a Superfund site.","Teledyne was declared a Superfund site in 1987, and Spectra-Physics followed in 1991."
+q014,timeline,True,0.0,True,False,"In what month and year was the TRW Microwave, Inc. (Building 825) site formally listed on the National Priorities List?","I couldn't find the information on when the TRW Microwave, Inc. (Building 825) site was formally listed on the National Priorities List (NPL) in the provided source excerpts.",February 1990.
