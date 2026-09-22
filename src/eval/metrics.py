@@ -11,10 +11,10 @@ retrieval (chunking/embedding/top_k) or generation (prompt/model), instead of gu
 
 # Phrases the model uses when it's declining to answer. If any of these appear,
 # the answer is scored incorrect regardless of keyword overlap — otherwise a refusal
-# that happens to echo the question's own keywords back can score as a false positive
-# (this was an actual bug found during the first baseline run: a refusal scored 0.6
-# overlap and was marked correct because it repeated site/company names from the
-# question itself while saying it had no information).
+# that happens to echo the question's own keywords back can score as a false positive.
+# (Found during the first baseline run: a refusal scored 0.6 overlap and was marked
+# correct because it repeated site/company names from the question itself while saying
+# it had no information.)
 REFUSAL_PHRASES = [
     "couldn't find",
     "could not find",

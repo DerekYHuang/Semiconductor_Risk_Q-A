@@ -5,15 +5,15 @@ Run:
     python src/eval/run_eval.py --run_name baseline
 
 Each run writes two files to outputs/eval_results/:
-  - eval_<run_name>.csv        summary metrics per question (for tracking runs over time)
-  - eval_<run_name>_chunks.jsonl   full retrieved chunk text per question (for debugging
-                                    *why* a question failed -- was the right chunk retrieved
-                                    at all, and if so, did it actually contain the fact?)
+  - eval_<run_name>.csv             summary metrics per question (for tracking runs over time)
+  - eval_<run_name>_chunks.jsonl    full retrieved chunk text per question (for debugging
+                                     *why* a question failed — was the right chunk retrieved
+                                     at all, and if so, did it actually contain the fact?)
 
-Read the _chunks.jsonl file whenever a question fails retrieval_hit or judged_correct --
-it shows you exactly what the model saw, which tells you whether to fix retrieval
+Read the _chunks.jsonl file whenever a question fails retrieval_hit or judged_correct —
+it shows exactly what the model saw, which tells you whether to fix retrieval
 (chunking/embedding/top_k) or fix the eval question itself (fact not actually in the
-saved document).
+saved document, or a known source-conflict — see any "note" field on that eval row).
 """
 
 import argparse
@@ -34,7 +34,7 @@ def load_eval_set(path: Path) -> list[dict]:
     rows = []
     for line in open(path, encoding="utf-8"):
         line = line.strip()
-        # skip blank lines and comment lines -- JSONL has no native comment syntax,
+        # skip blank lines and comment lines — JSONL has no native comment syntax,
         # but it's easy to accidentally leave these in when hand-editing the file
         if not line or line.startswith("//") or line.startswith("#"):
             continue
@@ -74,9 +74,10 @@ def main():
         score["question"] = row["question"]
         score["generated_answer"] = result["answer"]
         score["reference_answer"] = row["answer"]
+        score["note"] = row.get("note", "")
         scored_rows.append(score)
 
-        # Full retrieved-chunk record for debugging -- this is what lets you tell the
+        # Full retrieved-chunk record for debugging — this is what lets you tell the
         # difference between "the right chunk was retrieved but the model still got it
         # wrong" (a generation problem) vs. "the fact was never in the retrieved chunks
         # at all" (a retrieval/chunking problem, or the fact isn't in the saved doc).
@@ -102,7 +103,7 @@ def main():
         if score["is_refusal"]:
             flag = " [REFUSAL]"
         elif not score["judged_correct"] and score["retrieval_hit"]:
-            flag = " [RETRIEVED BUT WRONG -- check chunks file]"
+            flag = " [RETRIEVED BUT WRONG — check chunks file]"
         elif not score["retrieval_hit"]:
             flag = " [RETRIEVAL MISS]"
         print(f"  [{row['id']}] retrieval_hit={score['retrieval_hit']} judged_correct={score['judged_correct']}{flag}")
@@ -132,7 +133,7 @@ def main():
     print(f"\nSummary metrics saved to {out_path}")
     print(f"Full retrieved-chunk detail saved to {chunks_path}")
     print("Open the _chunks.jsonl file for any failing question to see exactly what the")
-    print("model was looking at -- that tells you whether it's a retrieval problem or a")
+    print("model was looking at — that tells you whether it's a retrieval problem or a")
     print("generation problem.")
     print("Copy the summary numbers above into README.md section 5 once you're happy with a run.")
 
